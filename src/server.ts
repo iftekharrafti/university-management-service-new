@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
-import config from "./config";
-import app from "./app";
+import mongoose from 'mongoose';
+import config from './config';
+import app from './app';
 
 async function main() {
   try {
@@ -11,7 +11,7 @@ async function main() {
       console.log(`Application listening on port ${config.port}`);
     });
   } catch (err) {
-    console.log("Filed to connect database", err);
+    console.log('Filed to connect database', err);
   }
 }
 
